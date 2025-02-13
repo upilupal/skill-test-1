@@ -14,20 +14,20 @@ const Navbar = () => {
    };
    return (
       <>
-         <section className="py-[45px] w-screen bg-transparent">
-            <div className="mx-auto container">
-               <div className="flex gap-5 justify-between px-5 md:justify-end  items-center w-full">
-                  <nav className="md:flex gap-10 font-medium justify-center items-center hidden">
+         <section className="py-[45px] lg:py-10 w-screen bg-transparent">
+            
+               <div className="flex gap-8 justify-between px-5 md:justify-end lg:pr-28  items-center w-full">
+                  <nav className="md:flex gap-10 font-semibold justify-center items-center hidden">
                      {navLinks.map((link) => (
                         <a
                            href={link.href}
                            key={link.label}
-                           className="text-black/70 text-sm"
+                           className="text-black/70 text-base"
                         >
                            {link.label}
                         </a>
                      ))}
-                     <button className="text-[#EF4444] text-sm">Log In</button>
+                     <button className="text-[#EF4444] text-base">Login</button>
                   </nav>
 
                 {/* hamburger menu */}
@@ -72,11 +72,11 @@ const Navbar = () => {
                   </div>
                 {/* hamburger menu */}
 
-                  <button className="bg-[#EF4444] px-5 p-[10px]  rounded-md text-white text-sm">
+                  <button className="bg-[#EF4444] px-5 p-2.5  rounded-md text-white text-sm font-semibold">
                      Sign Up
                   </button>
                </div>
-            </div>
+            
          </section>
 
          <div
